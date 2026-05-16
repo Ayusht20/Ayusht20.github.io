@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ayush Trilokchandani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: var(--bg-dark);
+            padding: 40px 20px;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .contact-info {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .section-heading {
+            font-family: var(--font-heading);
+            color: var(--accent);
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin: 30px 0 15px 0;
+        }
+        .resume-content p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .resume-item {
+            margin-bottom: 20px;
+        }
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .resume-item-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 18px;
+        }
+        .resume-item-subtitle {
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .resume-list {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        .resume-list li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .resume-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .skills-table td {
+            padding: 8px 0;
+            vertical-align: top;
+        }
+        .skills-table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+            width: 30%;
+        }
+        .print-btn {
+            display: block;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            max-width: 200px;
+        }
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .resume-container {
+                border: none;
+                background: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            .header h1 {
+                background: none;
+                -webkit-text-fill-color: black;
+            }
+            .section-heading {
+                color: black;
+                border-bottom: 1px solid black;
+            }
+            .resume-item-title, .skills-table td:first-child {
+                color: black;
+            }
+            .resume-list, .resume-content p, .contact-info, .skills-table td {
+                color: #333;
+            }
+            .resume-item-subtitle, .contact-info a {
+                color: #555;
+            }
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-primary print-btn" onclick="window.print()">🖨️ Print Resume</button>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Ayush Trilokchandani</h1>
+            <div class="contact-info">
+                Jamnagar, Gujarat | +91-8200677672 | <a href="mailto:ayushtrilokchandani2005@gmail.com">ayushtrilokchandani2005@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <a href="https://linkedin.com/in/ayushtrilokchandani" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/Ayusht20" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="resume-content">
+            <h2 class="section-heading">Professional Summary</h2>
+            <p>Full-Stack Developer with hands-on experience building scalable backend systems, SaaS platforms, AI-powered analytics applications, and real-time web applications. Skilled in backend development, API workflows, data visualization, and modern web technologies. Passionate about developing real-world backend and web applications with practical real world use cases.</p>
+
+            <h2 class="section-heading">Technical Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <td>Languages</td>
+                    <td>Python, JavaScript, Java, C++, PHP</td>
+                </tr>
+                <tr>
+                    <td>Frontend</td>
+                    <td>HTML, CSS, JavaScript, Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>Backend & APIs</td>
+                    <td>Node.js, Express.js, FastAPI, REST APIs, JWT Authentication, WebSockets, Socket.IO</td>
+                </tr>
+                <tr>
+                    <td>Databases</td>
+                    <td>MySQL, PostgreSQL, Oracle DB, Supabase</td>
+                </tr>
+                <tr>
+                    <td>Data & Analytics</td>
+                    <td>Pandas, Matplotlib, Data Visualization, Dashboard Creation</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, GitHub, Render, Vercel, Swagger UI</td>
+                </tr>
+            </table>
+
+            <h2 class="section-heading">Internship Experience</h2>
+            
+            <div class="resume-item">
+                <div class="resume-item-title">Python Web Development Intern (Ongoing)</div>
+                <span class="resume-item-subtitle">Labmentix</span>
+                <ul class="resume-list">
+                    <li>Working on backend development using Python-based technologies and API workflows</li>
+                    <li>Exploring scalable backend logic, request handling, and debugging practices</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-title">Data Analysis Using Excel Intern</div>
+                <span class="resume-item-subtitle">Triotronick Systems</span>
+                <ul class="resume-list">
+                    <li>Developed an Excel-based Hotel Management System with dashboards, billing workflows, revenue tracking, and operational reporting</li>
+                    <li>Used Excel formulas, charts, conditional formatting, and data validation for automation and analysis</li>
+                    <li>Organized structured datasets and reporting workflows for efficient business data handling</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading">Projects</h2>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div class="resume-item-title">MeterFlow — SaaS API Monetization Platform</div>
+                </div>
+                <span class="resume-item-subtitle">FastAPI, PostgreSQL, Supabase, JWT, JavaScript</span>
+                <ul class="resume-list">
+                    <li>Built a SaaS-based API monetization platform with API gateway architecture, analytics dashboards, JWT authentication, and API key management</li>
+                    <li>Implemented Razorpay payment workflows, request tracking, and prepaid credit-based billing systems</li>
+                    <li>Developed scalable backend workflows using FastAPI, PostgreSQL, and Supabase</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div class="resume-item-title">AI Data Analytics Dashboard</div>
+                </div>
+                <span class="resume-item-subtitle">Python, FastAPI, Pandas, Matplotlib, OpenAI API</span>
+                <ul class="resume-list">
+                    <li>Developed a conversational analytics platform for analyzing CSV datasets using OpenAI API integration</li>
+                    <li>Implemented natural-language query processing and dynamic chart generation using OpenAI API integration</li>
+                    <li>Performed data cleaning, transformation, and visualization workflows using Pandas and Matplotlib</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div class="resume-item-title">TypingRush — Real-Time Multiplayer Typing Game</div>
+                </div>
+                <span class="resume-item-subtitle">Node.js, Socket.IO, Express.js, MySQL, JavaScript</span>
+                <ul class="resume-list">
+                    <li>Built a real-time multiplayer typing game with live gameplay synchronization using WebSockets</li>
+                    <li>Implemented JWT authentication, leaderboard systems, and multiplayer room management</li>
+                    <li>Developed responsive gameplay interfaces with score and streak tracking features</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading">Education</h2>
+            <div class="resume-item">
+                <div class="resume-item-title">Bachelor of Computer Applications (BCA)</div>
+                <span class="resume-item-subtitle">Saurashtra University — C.Z.M. Gosrani BCA College (2023 – 2026)</span>
+            </div>
+            <div class="resume-item">
+                <ul class="resume-list" style="margin-top:-10px;">
+                    <li>HSC – Gujarat Board | 82.71% | 97.16 Percentile</li>
+                    <li>SSC – Gujarat Board | 86.16% | 95.65 Percentile</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading">Certifications</h2>
+            <ul class="resume-list">
+                <li>Internship Completion Certificate — Triotronick Systems</li>
+                <li>Internship Offer Letter — Labmentix</li>
+            </ul>
+
+            <h2 class="section-heading">Soft Skills</h2>
+            <p>Problem Solving | Communication | Team Collaboration | Quick Learner</p>
+        </div>
+    </div>
+</body>
+</html>
