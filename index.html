@@ -7,6 +7,22 @@
     <title>Ayush Trilokchandani | Full-Stack Developer</title>
     <meta name="description"
         content="Portfolio of Ayush Trilokchandani, Full-Stack Developer building SaaS platforms, real-time applications, and data-driven systems.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayusht20.github.io/">
+    <meta property="og:title" content="Ayush Trilokchandani | Full-Stack Developer">
+    <meta property="og:description"
+        content="Portfolio of Ayush Trilokchandani, Full-Stack Developer building SaaS platforms, real-time applications, and data-driven systems.">
+    <meta property="og:image" content="https://ayusht20.github.io/myself.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ayusht20.github.io/">
+    <meta property="twitter:title" content="Ayush Trilokchandani | Full-Stack Developer">
+    <meta property="twitter:description"
+        content="Portfolio of Ayush Trilokchandani, Full-Stack Developer building SaaS platforms, real-time applications, and data-driven systems.">
+    <meta property="twitter:image" content="https://ayusht20.github.io/myself.png">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,11 +57,18 @@
         <div class="container hero-content">
             <p class="greeting fade-in-up">Hi, my name is</p>
             <h1 class="fade-in-up" style="animation-delay: 0.1s">Ayush Trilokchandani.</h1>
-            <h2 class="fade-in-up" style="animation-delay: 0.2s">Architecting <span class="highlight">Scalable Systems</span> & Web Apps.</h2>
+            <h2 class="fade-in-up" style="animation-delay: 0.2s">Architecting <span class="highlight">Scalable
+                    Systems</span> & Web Apps.</h2>
             <p class="hero-description fade-in-up" style="animation-delay: 0.3s">
-                I'm a Full-Stack Developer passionate about crafting elegant SaaS platforms, AI-driven analytics, and robust real-time backends. I transform complex problems into seamless, performant solutions using Python, Node.js, and modern cloud architectures.
+                I'm a Full-Stack Developer passionate about crafting elegant SaaS platforms, AI-driven analytics, and
+                robust real-time backends. I transform complex problems into seamless, performant solutions using
+                Python, Node.js, and modern cloud architectures.
             </p>
-            <div class="hero-cta fade-in-up" style="animation-delay: 0.4s">
+            <div class="hero-badges fade-in-up" style="animation-delay: 0.4s">
+                <span class="badge">Currently seeking internships/full-time opportunities</span>
+                <span class="badge badge-outline">Open to freelance/backend roles</span>
+            </div>
+            <div class="hero-cta fade-in-up" style="animation-delay: 0.5s">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="mailto:ayushtrilokchandani2005@gmail.com" class="btn btn-outline">Get In Touch</a>
             </div>
@@ -61,22 +84,63 @@
                     <p>Hello! I'm Ayush, a passionate Full-Stack Developer based in Jamnagar, Gujarat. I enjoy building
                         real-world backend architectures, scalable web applications, and intuitive data visualizations.
                     </p>
-                    <p>I have completed my BCA at C.Z.M. Gosrani College and I am continually expanding my skillset in back-end
-                        logic, request handling, and debugging practices.</p>
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <ul class="skills-list">
-                        <li>Python & FastAPI</li>
-                        <li>Node.js & Express</li>
-                        <li>React.js</li>
-                        <li>PostgreSQL & MySQL</li>
-                        <li>WebSockets / Socket.IO</li>
-                        <li>Pandas & Matplotlib</li>
-                    </ul>
+                    <p>I have completed my BCA at C.Z.M. Gosrani College and I am focused on building scalable backend
+                        systems and production-ready web applications.</p>
                 </div>
                 <div class="about-visual">
                     <div class="image-wrapper">
                         <img src="myself.png" alt="Ayush Trilokchandani" class="profile-img">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="skills-container reveal">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>FastAPI</li>
+                        <li>Express</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps / Cloud</h3>
+                    <ul>
+                        <li>Supabase</li>
+                        <li>Vercel</li>
+                        <li>Render</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & AI</h3>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>OpenAI API</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -103,12 +167,12 @@
                             Triotronick Systems</span></h3>
                     <p class="experience-date">Completed</p>
                     <ul class="experience-list">
-                        <li>Developed an Excel-based Hotel Management System with dashboards, billing workflows, revenue
-                            tracking, and operational reporting.</li>
-                        <li>Used Excel formulas, charts, conditional formatting, and data validation for automation and
-                            analysis.</li>
-                        <li>Organized structured datasets and reporting workflows for efficient business data handling.
-                        </li>
+                        <li>Built an Excel-based Hotel Management System that automated billing, reporting, and revenue
+                            tracking across 4 core business workflows.</li>
+                        <li>Used advanced Excel formulas, charts, conditional formatting, and data validation to create
+                            interactive dashboards.</li>
+                        <li>Organized structured datasets to optimize reporting workflows for efficient business data
+                            handling.</li>
                     </ul>
                 </div>
             </div>
@@ -123,6 +187,9 @@
             <div class="projects-grid">
                 <!-- Project 1: AI Data Analytics Dashboard -->
                 <div class="project-card reveal">
+                    <div class="project-image-placeholder">
+                        <span>Dashboard Screenshot</span>
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
@@ -159,6 +226,11 @@
                                 target="_blank">AI Data Analytics Dashboard</a></h3>
                         <p class="project-desc">A conversational analytics platform for analyzing CSV datasets using
                             OpenAI integration, featuring natural-language queries and dynamic chart generation.</p>
+                        <div class="project-architecture">
+                            <span class="arch-tag"><strong>Hosting:</strong> Vercel</span>
+                            <span class="arch-tag"><strong>AI:</strong> OpenAI API</span>
+                            <span class="arch-tag"><strong>Data:</strong> Pandas</span>
+                        </div>
                         <ul class="project-tech">
                             <li>Python</li>
                             <li>FastAPI</li>
@@ -169,6 +241,9 @@
 
                 <!-- Project 2: MeterFlow -->
                 <div class="project-card reveal" style="transition-delay: 0.1s">
+                    <div class="project-image-placeholder">
+                        <span>Architecture Diagram</span>
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
@@ -205,6 +280,11 @@
                                 target="_blank">MeterFlow</a></h3>
                         <p class="project-desc">A SaaS API monetization platform with gateway architecture, analytics
                             dashboards, and Razorpay-integrated prepaid billing systems.</p>
+                        <div class="project-architecture">
+                            <span class="arch-tag"><strong>Hosting:</strong> Vercel / Render</span>
+                            <span class="arch-tag"><strong>Database:</strong> PostgreSQL</span>
+                            <span class="arch-tag"><strong>Auth:</strong> Supabase Auth</span>
+                        </div>
                         <ul class="project-tech">
                             <li>FastAPI</li>
                             <li>PostgreSQL</li>
@@ -215,6 +295,9 @@
 
                 <!-- Project 3: TypingRush -->
                 <div class="project-card reveal" style="transition-delay: 0.2s">
+                    <div class="project-image-placeholder">
+                        <span>Demo GIF</span>
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
@@ -251,6 +334,11 @@
                                 target="_blank">TypingRush</a></h3>
                         <p class="project-desc">A real-time multiplayer typing game featuring live synchronization, JWT
                             authentication, and interactive multiplayer room management.</p>
+                        <div class="project-architecture">
+                            <span class="arch-tag"><strong>Hosting:</strong> Vercel</span>
+                            <span class="arch-tag"><strong>Database:</strong> MySQL</span>
+                            <span class="arch-tag"><strong>Realtime:</strong> Socket.IO</span>
+                        </div>
                         <ul class="project-tech">
                             <li>Node.js</li>
                             <li>Socket.IO</li>
